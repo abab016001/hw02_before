@@ -1,5 +1,15 @@
+*{
+    /* outline: 1px solid #000; */
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
 .d-flex{
     display: flex;
+}
+.space-between{
+    justify-content: space-between;
 }
 .space-around{
     justify-content: space-around;
@@ -7,12 +17,37 @@
 .mb-30{
     margin-bottom: 30px;
 }
+.p0-30{
+    padding: 0 30px;
+}
 /* wrap */
 .wrap{
     width: 1024px;
     margin: 0 auto;
 }
 /* header */
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.header .menu{
+    display: flex;
+    align-items: center;
+}
+.header .menu li{
+    width: 80px;
+    padding: 5px 0;
+    text-align: center;
+    border-bottom: 0px solid #15ca1b;
+    transition: border-bottom 0.1s;
+}
+.header .menu li:hover{
+    border-bottom: 5px solid #15ca1b;
+}
+.header .menu li a{
+    font-weight: bolder;
+    color: #0f7812;
+}
 /* content */
 .content-item{
     width: 300px;
